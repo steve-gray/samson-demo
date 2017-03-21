@@ -1,0 +1,12 @@
+pipeline:
+	build:
+		image: node:7
+		commands:
+			- echo "I'm the standard build step"
+	
+	deploy:
+		image: node:7
+		commands:
+			- echo "I get run when the command is 'deploy'"
+		when:
+			event: deploy
