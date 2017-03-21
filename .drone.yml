@@ -11,4 +11,4 @@ pipeline:
       - echo "I get run when the command is 'deploy'"
       - env
     when:
-      event: deploy
+      event: deployment
