@@ -3,6 +3,7 @@ pipeline:
     image: node:7
     commands:
       - echo "I'm the standard build step"
+      - env
 
   deploy:
     image: node:7
