@@ -8,5 +8,6 @@ pipeline:
     image: node:7
     commands:
       - echo "I get run when the command is 'deploy'"
+      - env
     when:
       event: deploy
